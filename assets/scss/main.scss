@@ -2,10 +2,10 @@
 @import './navbar.scss';
 @import './loader.scss';
 @import './main-content.scss';
-@import './side-content.scss';
+@import 'side-content';
 @import './footer.scss';
 @import './modal.scss';
-@import './cards.scss';
+@import 'cards';
 
 
 :root {
