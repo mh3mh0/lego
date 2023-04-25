@@ -9,9 +9,9 @@
 
 
 :root {
---yellow: #ffd602;
---red: #d5040a;
---blue: #036cb6;
+  --yellow: #ffd602;
+  --red: #d5040a;
+  --blue: #036cb6;
 }
 
 
@@ -28,18 +28,17 @@ body {
   height: 100vh;
   width: 100%;
 
-}
+  .container {
+    position: absolute;
+    z-index: 1;
 
-.container {
-  position: absolute;
-  z-index: 1;
-
-  display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: 20% 50% 30%;
-  grid-template-areas: 'nav aside'
-                      'section aside'
-                      'footer aside';
-  height: 100%;
-  width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: 'nav aside'
+      'section aside'
+      'footer aside';
+    height: 100%;
+    width: 100%;
+  }
 }
