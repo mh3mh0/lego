@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO-PROJECT</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <section class="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+  <!-- Loader -->
+
+  <div class="page">
+    <!--Main content-->
+    <section class="container">
+      <!-- nav -->
+      <nav class="navbar">
+        <div class="navbar__content">
+          <img src="https://i.ibb.co/MMmDPXN/lego.png" alt="logo">
+          <ul>
+            <li>
+              <a href="#">EXCLUSIVES</a>
+            </li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">GIFT CARDS</a></li>
+            <li><a href="#">FIND A STORE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- nav -->
+
+
+
+      <section class="main-content">
+        <p>Design</p>
+        <h1>Super Hero!</h1>
+        <p>LEGO is the world's largest tire manufacturer, producing more than 306 million tiny rubber tires annually for
+          use in their sets. These tiny tires can be found on everything from LEGO cars to airplanes, and they come in a
+          variety of sizes and styles to fit different LEGO pieces.!</p>
+      </section>
+
+
+      <!-- side -->
+      <section class="side-content">
+        <div></div>
+        <!--keep in mind, position depends where is the tags, you can you z-index as well but it is more code-->
+        <p>Superman</p>
+        <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman">
+      </section>
+      <!-- side -->
+
+
+      <!-- footer -->
+      <section class="footer">
+        <div id="button-batman">
+          <img src="https://i.ibb.co/M18p91c/batman.webp" alt="batman">
+        </div>
+        <div id="button-robin">
+          <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="robin">
+        </div>
+        <div id="button-spidey">
+          <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="spiderman">
+        </div>
+      </section>
+      <!-- footer -->
+    </section>
+
+    <!-- Modal -->
+    <section class="modal hidden">
+      <div class="modal__container">
+        <svg class="modal__container--close" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          fill="currentColor" viewbox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+        <div class="modal__container--slider">
+          <input type="radio" name="slider-1" id="radio-1" checked>
+          <input type="radio" name="slider-1" id="radio-2">
+          <input type="radio" name="slider-1" id="radio-3">
+          <div class="cards">
+            <label for="radio-1" id="card-1" class="card">
+              <img
+                src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png"
+                alt="Spider-man-1">
+            </label>
+            <label for="radio-2" id="card-2" class="card">
+              <img
+                src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png"
+                alt="Spider-man-2">
+            </label>
+            <label for="radio-3" id="card-3" class="card">
+              <img
+                src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png"
+                alt="Spider-man-3">
+            </label>
+          </div>
+        </div>
+        <button class="modal__container--button">I want it!</button>
+      </div>
+    </section>
+    <!-- Modal -->
+
+
+  </div>
+
+</body>
+
+</html>
