@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
-@import './navbar.scss';
-@import './loader.scss';
-@import './main-content.scss';
+@import 'navbar';
+@import 'loader';
+@import 'main-content';
 @import 'side-content';
-@import './footer.scss';
-@import './modal.scss';
+@import 'footer';
+@import 'modal';
 @import 'cards';
 
 
