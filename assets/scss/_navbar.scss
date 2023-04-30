@@ -19,16 +19,33 @@
       padding: 0;
       width: 450px;
 
-      li a {
-        font-weight: 300;
-        color: var(--red);
-        text-decoration: none;
+    }
+    a {
+      font-weight: 300;
+      color: var(--red);
+      text-decoration: none;
+
+      &:hover::after {
+        transform: scaleX(1);
       }
+
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid var(--red);
+        transform: scaleX(0);
+        transition: transform 300ms;
+      }
+
     }
 
+    .toggle__menu {
+      display: none;
+    }
 
-    animation: 1.8s navbar 0.5s ease-in-out;
+    animation: 2s navbar 0.5s ease-in-out;
   }
+
 }
 
 @keyframes navbar {

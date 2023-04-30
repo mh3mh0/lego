@@ -43,13 +43,16 @@
     }
 
     .modal__container--button {
-      padding: 20px;
+      box-sizing: border-box;
+      padding: 5px 10px;
       width: 240px;
       background: var(--red);
       border: none;
       color: white;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin: 5px 0 5px 0;
     }
   }
 }

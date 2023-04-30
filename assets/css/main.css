@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   padding: 0 0 0 80px;
-  animation: 1.8s navbar 0.5s ease-in-out;
+  animation: 2s navbar 0.5s ease-in-out;
 }
 .navbar .navbar__content img {
   width: 50px;
@@ -20,10 +20,23 @@
   padding: 0;
   width: 450px;
 }
-.navbar .navbar__content ul li a {
+.navbar .navbar__content a {
   font-weight: 300;
   color: var(--red);
   text-decoration: none;
+}
+.navbar .navbar__content a:hover::after {
+  transform: scaleX(1);
+}
+.navbar .navbar__content a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--red);
+  transform: scaleX(0);
+  transition: transform 300ms;
+}
+.navbar .navbar__content .toggle__menu {
+  display: none;
 }
 
 @keyframes navbar {
@@ -109,7 +122,7 @@
   margin: 0 0 28px 0;
 }
 .main-content p:last-child {
-  font-weight: 100;
+  font-weight: 200;
   margin: 0;
   width: 60%;
 }
@@ -254,13 +267,16 @@
   cursor: pointer;
 }
 .modal .modal__container .modal__container--button {
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 5px 10px;
   width: 240px;
   background: var(--red);
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
 }
 
 .cards {
@@ -310,6 +326,111 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 580px) {
+  .container .navbar__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  .container .navbar__content .navbar__menu {
+    height: auto;
+    width: 100px;
+    text-align: right;
+  }
+  .container .navbar__content .navbar__menu ul {
+    margin: 30px 0 0 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    transition: opacity 400ms, visibility 400ms, z-index 400ms;
+    transition-delay: 300ms;
+    z-index: 0;
+  }
+  .container .navbar__content .navbar__menu ul li {
+    display: block;
+    padding: 5px;
+  }
+  .container .navbar__content .navbar__menu:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 400ms, visibility 400ms, z-index 400ms;
+    transition-delay: 300ms;
+    z-index: 1;
+  }
+  .container .navbar__content .navbar__menu .toggle__menu {
+    display: block;
+  }
+  .container .main-content {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  body .page {
+    overflow-y: auto;
+  }
+  body .page .container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 15% 60% 25%;
+    grid-template-areas: "nav     nav" "aside   footer" "section section";
+  }
+  body .page .container .main-content {
+    margin-top: -70px;
+    padding: 0px;
+    margin-left: 50px;
+  }
+  body .page .container .main-content h1 {
+    font-size: 38px;
+  }
+  body .page .container .main-content p:first-child {
+    font-size: 26px;
+    line-height: 45px;
+  }
+  body .page .container .main-content p:last-child {
+    width: 80%;
+    padding: 0 0 0 0;
+  }
+  body .page .container .side-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  body .page .container .side-content img {
+    grid-column: 2/3;
+    width: 90%;
+  }
+  body .page .container .side-content p {
+    align-self: center;
+  }
+  body .page .container .footer {
+    flex-direction: column;
+    height: 100%;
+    border-radius: 50px 0 0 50px;
+  }
+  body .page .container .footer div {
+    border-radius: 25px 0 0 25px;
+    width: 70%;
+    height: 30%;
+  }
+  body .page .container .footer div img {
+    width: 140px;
+    position: relative;
+  }
+  body .page .modal__content {
+    width: 300px;
+  }
+}
 :root {
   --yellow: #ffd602;
   --red: #d5040a;
@@ -318,26 +439,27 @@
 
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 300;
   height: 100vh;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 .page {
   position: relative;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 .page .container {
   position: absolute;
   z-index: 1;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 20% 50% 30%;
-  grid-template-areas: "nav aside" "section aside" "footer aside";
-  height: 100%;
-  width: 100%;
+  grid-template-areas: "nav     aside" "section aside" "footer  aside";
 }
 
 /*# sourceMappingURL=main.css.map */
