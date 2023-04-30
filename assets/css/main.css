@@ -427,10 +427,11 @@ body {
 }
 .cards .card {
   background: var(--yellow);
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin: 0 auto;
+  padding: 20px;
   transition: transform 0.5s ease;
   cursor: pointer;
   display: grid;

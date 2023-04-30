@@ -51,7 +51,7 @@ buttonSpidey.addEventListener('click', () => {
             <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="spiderman 2"/>
         </label>
         <label for="radio-3" id="card-3" class="card">
-            <img src="https://i.ibb.co/9yqxdNc/png-transparent-mary-jane-watson-spider-man-venom-youtube-liz-allan-scarlet-witch-heroes-superhero-f.png" alt="spiderman 3" style="height:10em"/>
+            <img src="https://i.ibb.co/9yqxdNc/png-transparent-mary-jane-watson-spider-man-venom-youtube-liz-allan-scarlet-witch-heroes-superhero-f.png" alt="spiderman 3"/>
         </label>
         `;
 });
