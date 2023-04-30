@@ -54,20 +54,6 @@ $large-screen: 1024px;
       margin-left: 100px;
     }
   }
-
-  .modal {
-    .modal__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      background: rgb(238, 235, 235);
-      width: 70%;
-      height: 50%;
-    }
-
-  }
 }
 
 @media screen and (max-width:$medium-screen) {
