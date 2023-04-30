@@ -53,6 +53,18 @@ $large-screen: 1024px;
     .main-content {
       margin-left: 100px;
     }
+
+
+  }
+
+  .modal{
+
+    .modal__container {
+
+      background: red;
+      width: 90%;
+      height: 70%;
+    }
   }
 }
 
