@@ -53,6 +53,11 @@ $large-screen: 1024px;
     .main-content {
       margin-left: 100px;
     }
+    .cards{
+      .card {
+        padding: 20px;
+      }
+    }
   }
 
   .modal {

@@ -510,6 +510,9 @@ body {
   .container .main-content {
     margin-left: 100px;
   }
+  .container .cards .card {
+    padding: 20px;
+  }
   .modal .modal__container {
     display: flex;
     flex-direction: column;
