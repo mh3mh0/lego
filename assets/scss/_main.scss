@@ -1,3 +1,4 @@
+@import 'resert';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
 @import 'navbar';
 @import 'loader';
@@ -11,12 +12,22 @@
 
 
 
+
+/* my code */
 :root {
   --yellow: #ffd602;
   --red: #d5040a;
   --blue: #036cb6;
 }
 
+html {
+  font-size: 16px; /* Set the base font size */
+}
+
+
+h1 {
+  font-size: 2rem; /* This will be equivalent to 32px */
+}
 
 
 body {
@@ -25,6 +36,10 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
+  font-size: 1rem; /* This will be equivalent to 16px */
+  h1 {
+    font-size: 2rem; /* This will be equivalent to 32px */
+  }
 }
 
 .page {
