@@ -326,6 +326,11 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 420px) {
+  .container .main-content {
+    margin-top: -200px;
+  }
+}
 @media screen and (max-width: 580px) {
   .container .navbar__content {
     width: 100%;
@@ -364,6 +369,9 @@
   }
   .container .navbar__content .navbar__menu .toggle__menu {
     display: block;
+  }
+  .container .main-content {
+    margin: 148px;
   }
   .container .main-content h1 p {
     margin-left: 100px;
