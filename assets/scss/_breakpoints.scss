@@ -1,22 +1,10 @@
-$smaller-screen: 420px;
+$smaller-screen: 320px;
 $small-screen: 580px;
 $medium-screen:900px;
 $large-screen: 1024px;
 
-
-
-@media screen and (max-width:$smaller-screen){
-  .container{
-    .main-content{
-      margin-top: -200px;
-    }
-  }
-}
-
-
 @media screen and (max-width:$small-screen) {
   .container {
-
     .navbar__content {
       width: 100%;
       display: flex;
@@ -62,7 +50,7 @@ $large-screen: 1024px;
     }
 
     .main-content {
-      margin: 148px;
+      margin: 100px;
       h1 p {
         margin-left: 100px;
         margin-top: -50%;
@@ -72,19 +60,8 @@ $large-screen: 1024px;
     .side-content {
       padding-bottom: 48%;
     }
-
-
   }
 
-  .modal {
-
-    .modal__container {
-
-      background: red;
-      width: 90%;
-      height: 70%;
-    }
-  }
 }
 
 @media screen and (max-width:$medium-screen) {
