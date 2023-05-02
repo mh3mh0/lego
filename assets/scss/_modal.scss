@@ -22,7 +22,7 @@
     position: absolute;
     background: var(--white);
     width: max-content;
-    height: 50%;
+    height: 70%;
 
 
     .modal__container--slider {
@@ -38,7 +38,7 @@
     .modal__container--close {
       position: absolute;
       top: 14px;
-      right: 14px;
+      left: 40%
       color: var(--red);
       cursor: pointer;
     }
