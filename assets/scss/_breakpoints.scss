@@ -50,8 +50,13 @@ $large-screen: 1024px;
       }
     }
 
-    .main-content {
+    .main-content h1 p {
       margin-left: 100px;
+      margin-top: -50%;
+    }
+
+    .side-content{
+      padding-bottom: 48%;
     }
 
 

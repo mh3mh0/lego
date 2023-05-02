@@ -365,8 +365,12 @@
   .container .navbar__content .navbar__menu .toggle__menu {
     display: block;
   }
-  .container .main-content {
+  .container .main-content h1 p {
     margin-left: 100px;
+    margin-top: -50%;
+  }
+  .container .side-content {
+    padding-bottom: 48%;
   }
   .modal .modal__container {
     background: red;
